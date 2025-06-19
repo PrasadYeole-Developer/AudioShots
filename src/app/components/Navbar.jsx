@@ -1,6 +1,6 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
+import { Button } from "@/app/components/ui/button";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import React, { useEffect, useRef, useState } from "react";

@@ -1,7 +1,7 @@
 import React from "react";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardFooter } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
+import { Button } from "@/app/components/ui/button";
+import { Card, CardContent, CardFooter } from "@/app/components/ui/card";
+import { Input } from "@/app/components/ui/input";
 
 const Contact = () => {
   return (
@@ -18,9 +18,11 @@ const Contact = () => {
           Have feedback, inquiries, or need support? Reach out to us, and we'll
           get back to you as soon as possible.
         </p>
-        <Card 
-        data-scroll data-scroll-speed="5"
-        className="w-full max-w-md bg-[#0f0f0f] text-white shadow-lg rounded-xl border-0 mt-[-3rem] pb-[0.5rem]">
+        <Card
+          data-scroll
+          data-scroll-speed="5"
+          className="w-full max-w-md bg-[#0f0f0f] text-white shadow-lg rounded-xl border-0 mt-[-3rem] pb-[0.5rem]"
+        >
           <CardContent className="p-6">
             <form className="space-y-4">
               <div className="flex flex-col gap-1">
