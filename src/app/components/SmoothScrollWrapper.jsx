@@ -19,6 +19,16 @@ const SmoothScrollWrapper = ({ children }) => {
       smooth: true,
       lerp: 0.07,
       multiplier: 1.2,
+      smartphone: {
+        smooth: true,
+        lerp: 0.6,
+        multiplier: 1.0,
+      },
+      tablet: {
+        smooth: true,
+        lerp: 0.6,
+        multiplier: 1.0,
+      },
     });
 
     locoScroll.on("scroll", ScrollTrigger.update);
