@@ -34,7 +34,7 @@ A modern audio content platform built with **Next.js (App Router)**, **Tailwind 
    npm install
 ```
 
-3.Run the development server:
+3. Run the development server:
 ```bash
    npm run dev
 ```
