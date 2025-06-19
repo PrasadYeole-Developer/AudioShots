@@ -25,7 +25,7 @@ const Footer = () => {
           </small>
           <div className="socials mt-[1rem] flex gap-[1rem] items-center">
             <a
-              href="https://https://www.instagram.com/weoto/"
+              href="https://www.instagram.com/weoto/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -50,12 +50,13 @@ const Footer = () => {
               href="https://x.com/WeotoTechlabs/"
               target="_blank"
               rel="noopener noreferrer"
-            ></a>
-            <img
-              src="/twitter.svg"
-              alt="Twitter"
-              className="w-[1.5rem] h-[1.5rem] ml-[-0.8rem]"
-            ></img>
+            >
+              <img
+                src="/twitter.svg"
+                alt="Twitter"
+                className="w-[1.8rem] h-[1.8rem]"
+              ></img>
+            </a>
           </div>
         </div>
         <div className="right"></div>
