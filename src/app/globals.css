@@ -121,16 +121,18 @@
   }
 }
 
-.bg-grid {
-  background-color: #111;
+.bg-gradient-grid {
   background-image: linear-gradient(
       to right,
-      rgba(255, 255, 255, 0.1) 1px,
+      rgba(255, 255, 255, 0.05) 1px,
       transparent 1px
     ),
-    linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
-  background-size: 1.5rem 1.5rem;
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom right, #000, #0f0f0f, #1a1a1a);
+  background-size: 2rem 2rem, 2rem 2rem, cover;
+  background-blend-mode: overlay;
 }
+
 .scroll-container {
   height: 100%;
   overflow: hidden;

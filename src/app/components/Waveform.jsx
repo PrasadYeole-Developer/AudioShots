@@ -6,14 +6,14 @@ import React from "react";
 const Waveform = () => {
   useGSAP(() => {
     gsap.to("rect", {
-      scaleY: (i) => 0.5 + Math.random() * 1.5,
+      scaleY: (i) => 0.3 + Math.random() * 0.9,
       transformOrigin: "center bottom",
       duration: 0.5,
       repeat: -1,
       yoyo: true,
       ease: "sine.inOut",
       stagger: {
-        each: 0.05,
+        each: 0.03,
         from: "center",
       },
     });

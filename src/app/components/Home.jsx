@@ -26,11 +26,7 @@ const HeroSection = ({ tl }) => {
     );
   }, []);
   return (
-    <div
-      id="home"
-      data-scroll-section
-      className="z-10 w-full h-screen bg-black/30 backdrop-blur-md border border-purple-600/30 rounded-2xl shadow-lg shadow-purple-500/10"
-    >
+    <div id="home" data-scroll-section className="z-10 w-full h-screen">
       <div
         ref={hero}
         className="text-white flex flex-col items-center justify-center gap-3 w-full h-full"
