@@ -35,7 +35,7 @@ const Footer = () => {
           data-scroll
           data-scroll-direction="horizontal"
           data-scroll-speed="5"
-          className="left ml-[1rem] left px-[3rem] py-[2rem] flex flex-col gap-[1.2rem] w-[28%] h-full"
+          className="left ml-[0.5rem] px-[3rem] py-[2rem] flex flex-col gap-[1.2rem] w-[28%] h-full mb-[1rem] items-start justify-center"
         >
           <img
             src="/logo_audioshots.webp"
@@ -81,7 +81,7 @@ const Footer = () => {
             </a>
           </div>
         </div>
-        <div className="right flex items-center w-[72%] p-2 overflow-hidden mt-[-1.5rem]">
+        <div className="right flex items-center w-[70%] p-2 overflow-hidden mt-[-1.5rem] ml-[-1rem]">
           <div ref={marqueeRef} className="flex gap-[5rem] w-fit">
             {[1, 2, 3, 4, 5, 6].map((n) => (
               <Image
