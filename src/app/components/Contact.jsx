@@ -8,7 +8,7 @@ const Contact = () => {
     <div
       id="contact"
       data-scroll-section
-      className="w-full text-white bg-[#131313] min-h-screen"
+      className="w-full text-white bg-[#131313] min-h-screen select-none"
     >
       <div className="contact pt-[5.5rem] pb-[2rem] flex flex-col items-center gap-[2rem]">
         <h1 className="scroll-m-20 text-center text-4xl font-extrabold tracking-tight text-balance">

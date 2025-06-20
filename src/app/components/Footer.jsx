@@ -1,19 +1,41 @@
+"use client";
+import { useRef } from "react";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import Image from "next/image";
 import React from "react";
 
 const Footer = () => {
+  const marqueeRef = useRef(null);
+
+  useGSAP(() => {
+    const container = marqueeRef.current;
+    const totalWidth = container.scrollWidth;
+
+    gsap.to(container, {
+      x: `-${totalWidth * 3}`,
+      duration: 40,
+      ease: "none",
+      repeat: -1,
+    });
+  }, []);
+
   return (
-    <div data-scroll-section className="w-full h-[75vh] bg-[#0C0C0C]">
+    <div
+      data-scroll-section
+      className="w-full h-[75vh] bg-[#0C0C0C] select-none"
+    >
       <hr
         data-scroll
         data-scroll-speed="6.5"
         className="h-[0.01rem] bg-gray-400 border-0"
       />
-      <div className="links w-full h-[80%] pt-[1rem]">
+      <div className="links w-full h-[80%] pt-[1rem] flex items-center">
         <div
           data-scroll
           data-scroll-direction="horizontal"
-          data-scroll-speed="16"
-          className=" ml-[-2rem] left px-[3rem] py-[2rem] flex flex-col gap-[1.2rem] w-full h-full"
+          data-scroll-speed="5"
+          className=" ml-[1rem] left px-[3rem] py-[2rem] flex flex-col gap-[1.2rem] w-[28%] h-full"
         >
           <img
             src="/logo_audioshots.webp"
@@ -59,7 +81,46 @@ const Footer = () => {
             </a>
           </div>
         </div>
-        <div className="right"></div>
+        <div className="right flex items-center w-[72%] p-2 overflow-hidden mt-[-1.5rem]">
+          <div ref={marqueeRef} className="flex gap-[5rem] w-fit">
+            {[1, 2, 3, 4, 5, 6].map((n) => (
+              <Image
+                key={n}
+                src={`/FooterVideo/${n}.webp`}
+                alt={`screen ${n}`}
+                width={175}
+                height={500}
+              />
+            ))}
+            {[1, 2, 3, 4, 5, 6].map((n) => (
+              <Image
+                key={`clone-${n}`}
+                src={`/FooterVideo/${n}.webp`}
+                alt={`screen ${n}`}
+                width={175}
+                height={500}
+              />
+            ))}
+            {[1, 2, 3, 4, 5, 6].map((n) => (
+              <Image
+                key={`clone-${n}`}
+                src={`/FooterVideo/${n}.webp`}
+                alt={`screen ${n}`}
+                width={175}
+                height={500}
+              />
+            ))}
+            {[1, 2, 3, 4, 5, 6].map((n) => (
+              <Image
+                key={`clone-${n}`}
+                src={`/FooterVideo/${n}.webp`}
+                alt={`screen ${n}`}
+                width={175}
+                height={500}
+              />
+            ))}
+          </div>
+        </div>
       </div>
       <hr className="h-[0.1rem] bg-gray-800 w-[96%] ml-[2%] bottom-line" />
       <div className="text-sm font-semibold text-white text-center pt-[2rem]">

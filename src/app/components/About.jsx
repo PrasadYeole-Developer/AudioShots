@@ -9,7 +9,7 @@ const About = () => {
     <div
       id="about"
       data-scroll-section
-      className="bg-[#181818] w-full min-h-screen text-white pt-[5rem] py-[3rem] px-[1rem] scroll-mt-28 flex flex-col items-center"
+      className="bg-[#181818] w-full min-h-screen text-white pt-[5rem] py-[3rem] px-[1rem] scroll-mt-28 flex flex-col items-center select-none"
     >
       <h1 className="scroll-m-20 text-center text-4xl font-extrabold tracking-tight text-balance">
         About Us

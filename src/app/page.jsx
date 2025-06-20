@@ -20,7 +20,7 @@ const Home = () => {
   const tl = useRef(gsap.timeline());
   return (
     <SmoothScrollWrapper>
-      <div className="relative inset-0 bg-gradient-grid">
+      <div className="relative inset-0 bg-gradient-grid select-none">
         <HeroSection tl={tl.current} />
         <Navbar tl={tl.current} />
       </div>

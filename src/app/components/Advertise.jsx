@@ -9,7 +9,7 @@ const Advertise = () => {
     <div
       id="googleplay"
       data-scroll-section
-      className="w-full text-white bg-black h-[80vh] flex items-center justify-between p-[8rem] overflow-hidden"
+      className="w-full text-white bg-black h-[80vh] flex items-center justify-between p-[8rem] overflow-hidden select-none"
     >
       <div className="left flex flex-col gap-1 items-start">
         <h2 className="scroll-m-20 pb-2 text-3xl font-semibold tracking-tight first:mt-0">
