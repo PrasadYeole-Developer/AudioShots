@@ -25,17 +25,17 @@ const Footer = () => {
       data-scroll-section
       className="w-full h-[75vh] bg-[#0C0C0C] select-none"
     >
-      <hr
+      {/* <hr
         data-scroll
         data-scroll-speed="6.5"
         className="h-[0.01rem] bg-gray-400 border-0"
-      />
+      /> */}
       <div className="links w-full h-[80%] pt-[1rem] flex items-center">
         <div
           data-scroll
           data-scroll-direction="horizontal"
           data-scroll-speed="5"
-          className=" ml-[1rem] left px-[3rem] py-[2rem] flex flex-col gap-[1.2rem] w-[28%] h-full"
+          className="left ml-[1rem] left px-[3rem] py-[2rem] flex flex-col gap-[1.2rem] w-[28%] h-full"
         >
           <img
             src="/logo_audioshots.webp"
