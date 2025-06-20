@@ -176,7 +176,7 @@ html.has-scroll-smooth .c-scrollbar {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
+    gap: 5rem;
   }
   #googleplay .blank {
     display: none;
@@ -241,7 +241,7 @@ html.has-scroll-smooth .c-scrollbar {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
+    gap: 5rem;
   }
   #googleplay .blank {
     display: none;

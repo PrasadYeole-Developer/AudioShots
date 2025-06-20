@@ -49,28 +49,43 @@ const Advertise = () => {
           </Button>
         </Link> */}
       </div>
-      <div data-scroll data-scroll-speed="12" className="right relative p-6">
-        <Image
-          src="/blank.png"
-          alt="screen 1"
-          width={300}
-          height={700}
-          className="blank"
-        />
-        <Image
-          src="/screen1.jpg"
-          alt="screen 1"
-          width={300}
-          height={500}
-          className=""
-        />
-        <Image
-          src="/screen2.jpg"
-          alt="screen 2"
-          width={300}
-          height={500}
-          className=""
-        />
+      <div
+        data-scroll
+        data-scroll-speed="8"
+        className="right relative p-6 flex gap-[3rem]"
+      >
+        <div className="leftScr flex flex-col gap-6">
+          <Image
+            src="/blank.png"
+            alt="screen 1"
+            width={300}
+            height={400}
+            className="blank mt-[-16rem]"
+          />
+          <Image
+            src="/screen1.jpg"
+            alt="screen 1"
+            width={300}
+            height={500}
+            className=""
+          />
+        </div>
+        <div className="rightScr flex flex-col gap-6">
+          <Image
+            src="/blank.png"
+            alt="screen 1"
+            width={300}
+            height={400}
+            className="blank mt-[-10rem]"
+          />
+          <Image
+            src="/screen2.jpg"
+            alt="screen 2"
+            width={300}
+            height={500}
+            className=""
+          />
+        </div>
       </div>
     </div>
   );
