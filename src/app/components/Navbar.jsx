@@ -68,7 +68,7 @@ const Navbar = ({ tl }) => {
   });
 
   return (
-    <nav className="navbar top-0 left-0 w-full fixed z-90 flex items-center justify-around py-[0.65rem] bg-[#0e0e0e]/60 backdrop-blur-md border-b border-white/10 shadow-md transition-all duration-300 ease-in-out">
+    <nav className="navbar top-0 left-0 w-full fixed z-90 flex items-center justify-around py-[0.65rem] bg-[#0e0e0e]/60 hover:bg-[#1a1a1a]/80 backdrop-blur-md border-b border-white/10 shadow-md transition-all duration-300 ease-in-out">
       <h1
         ref={logo}
         className="text-white text-[1.6rem] font-sans font-bold cursor-pointer flex items-center gap-3"
