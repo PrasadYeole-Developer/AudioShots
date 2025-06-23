@@ -1,20 +1,27 @@
 "use client";
 
 import dynamic from "next/dynamic";
+import React, { useRef } from "react";
+import gsap from "gsap";
 
 const SmoothScrollWrapper = dynamic(
   () => import("./components/SmoothScrollWrapper"),
   { ssr: false }
 );
 
-import React, { useRef } from "react";
-import HeroSection from "./components/Home";
-import Navbar from "./components/Navbar";
-import gsap from "gsap";
-import About from "./components/About";
-import Advertise from "./components/Advertise";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
+const HeroSection = dynamic(() => import("./components/Home"), {
+  ssr: false,
+});
+const Navbar = dynamic(() => import("./components/Navbar"), {
+  ssr: false,
+});
+const Footer = dynamic(() => import("./components/Footer"), {
+  ssr: false,
+});
+
+const About = dynamic(() => import("./components/About"));
+const Advertise = dynamic(() => import("./components/Advertise"));
+const Contact = dynamic(() => import("./components/Contact"));
 
 const Home = () => {
   const tl = useRef(gsap.timeline());

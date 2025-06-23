@@ -26,7 +26,7 @@ const Advertise = () => {
           <Button
             ref={playStr}
             variant="outline"
-            className="bg-[#131313] mt-5 text-white py-[1.5rem] px-[1rem] cursor-pointer rounded-sm border-0 flex gap-3 items-center btn hover:bg-[#1e1230] hover:text-white"
+            className="btn bg-[#131313] mt-5 text-white py-[1.5rem] px-[1rem] cursor-pointer rounded-sm border-0 flex gap-3 items-center btn hover:bg-[#1e1230] hover:text-white"
           >
             <Image
               src="/playStore.svg"

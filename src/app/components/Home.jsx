@@ -3,7 +3,8 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import React, { useRef } from "react";
-import Waveform from "./Waveform";
+import dynamic from "next/dynamic";
+const Waveform = dynamic(() => import("./Waveform"), { ssr: false });
 
 const HeroSection = ({ tl }) => {
   let hero = useRef();

@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useRef } from "react";
+
 import AboutCards from "./AboutCards";
 
 const About = () => {
