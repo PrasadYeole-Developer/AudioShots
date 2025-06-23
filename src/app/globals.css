@@ -154,7 +154,7 @@ html.has-scroll-smooth .c-scrollbar {
   z-index: 0;
 }
 
-@media (max-width: 440px) {
+@media (max-width: 376px) {
   .navbar {
     padding: 1rem;
     gap: 2rem;
@@ -164,10 +164,15 @@ html.has-scroll-smooth .c-scrollbar {
     display: none;
   }
   #home h1 {
-    font-size: 3.6rem;
+    margin-top: 3.2rem;
+    font-size: 3rem;
   }
   #home h2 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+  }
+  #home p{
+    font-size: 0.65rem;
+    margin-top: 1rem;
   }
   #about p {
     width: 95%;
@@ -189,8 +194,99 @@ html.has-scroll-smooth .c-scrollbar {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: relative;
+  }
+  #googleplay .btn {
+    position: absolute;
+    top: 0;
+    left: 20%;
+    z-index: 999;
   }
   #googleplay .right {
+    width: 200%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+  #contact p {
+    width: 95%;
+    margin-bottom: 2rem;
+  }
+  .links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .links .right {
+    display: none;
+  }
+  .links .left {
+    margin-left: -3rem;
+    margin-top: -1rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .bottom-line {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 376px) and (max-width: 440px) {
+  .navbar {
+    padding: 1rem;
+    gap: 2rem;
+    justify-content: space-between;
+  }
+  .navbar ul {
+    display: none;
+  }
+  #home h1 {
+    font-size: 3.6rem;
+  }
+  #home h2 {
+    font-size: 1.5rem;
+  }
+  #home p{
+    font-size: 0.85rem;
+    margin-top: 1.6rem;
+  }
+  #about p {
+    width: 95%;
+  }
+  #about .cards {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+  }
+  #googleplay h2,
+  #googleplay p,
+  #googleplay .blank {
+    display: none;
+  }
+  #googleplay {
+    padding: 0.5rem 6.6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  #googleplay .btn {
+    position: absolute;
+    top: 0;
+    left: 23%;
+    z-index: 999;
+  }
+  #googleplay .right {
+    width: 200%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -252,20 +348,10 @@ html.has-scroll-smooth .c-scrollbar {
   #googleplay .blank {
     display: none;
   }
-  #googleplay h2 {
-    margin-left: -6rem;
-    margin-top: 3rem;
-    font-size: 2.5rem;
-    width: 100%;
-  }
-  #googleplay p {
-    margin-left: -6rem;
-    margin-bottom: 2rem;
-    font-size: 1.2rem;
-    width: 100%;
-  }
-  #googleplay .btn {
-    margin-left: 7rem;
+  #googleplay h2,
+  #googleplay p,
+  #googleplay .blank {
+    display: none;
   }
   #googleplay {
     padding: 0.5rem 6.6rem;
@@ -273,6 +359,21 @@ html.has-scroll-smooth .c-scrollbar {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: relative;
+  }
+  #googleplay .btn {
+    position: absolute;
+    top: 0;
+    left: 36%;
+    z-index: 999;
+  }
+  #googleplay {
+    padding: 0.5rem 6.6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
   }
   #googleplay .right {
     display: flex;

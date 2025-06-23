@@ -3,18 +3,13 @@
 import dynamic from "next/dynamic";
 import React, { useRef } from "react";
 import gsap from "gsap";
+import HeroSection from "./components/Home";
+import Navbar from "./components/Navbar";
 
 const SmoothScrollWrapper = dynamic(
   () => import("./components/SmoothScrollWrapper"),
   { ssr: false }
 );
-
-const HeroSection = dynamic(() => import("./components/Home"), {
-  ssr: false,
-});
-const Navbar = dynamic(() => import("./components/Navbar"), {
-  ssr: false,
-});
 const Footer = dynamic(() => import("./components/Footer"), {
   ssr: false,
 });
