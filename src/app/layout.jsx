@@ -24,7 +24,7 @@ export const metadata = {
     images: [
       {
         url: "/preview.png",
-        width: 1223,
+        width: 1200,
         height: 630,
         alt: "AudioShots OG Preview",
       },

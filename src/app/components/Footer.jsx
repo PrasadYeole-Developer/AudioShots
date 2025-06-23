@@ -86,7 +86,7 @@ const Footer = () => {
             {[1, 2, 3, 4, 5, 6].map((n) => (
               <Image
                 key={n}
-                src={`/FooterVideo/${n}.webp`}
+                src={`/Footer/${n}.webp`}
                 alt={`screen ${n}`}
                 width={175}
                 height={500}
@@ -95,7 +95,7 @@ const Footer = () => {
             {[1, 2, 3, 4, 5, 6].map((n) => (
               <Image
                 key={`clone-${n}`}
-                src={`/FooterVideo/${n}.webp`}
+                src={`/Footer/${n}.webp`}
                 alt={`screen ${n}`}
                 width={175}
                 height={500}
@@ -104,7 +104,7 @@ const Footer = () => {
             {[1, 2, 3, 4, 5, 6].map((n) => (
               <Image
                 key={`clone-${n}`}
-                src={`/FooterVideo/${n}.webp`}
+                src={`/Footer/${n}.webp`}
                 alt={`screen ${n}`}
                 width={175}
                 height={500}
@@ -113,7 +113,7 @@ const Footer = () => {
             {[1, 2, 3, 4, 5, 6].map((n) => (
               <Image
                 key={`clone-${n}`}
-                src={`/FooterVideo/${n}.webp`}
+                src={`/Footer/${n}.webp`}
                 alt={`screen ${n}`}
                 width={175}
                 height={500}
