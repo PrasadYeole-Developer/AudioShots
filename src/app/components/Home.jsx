@@ -9,11 +9,10 @@ const HeroSection = ({ tl }) => {
   let hero = useRef();
   let head = useRef();
   let h2 = useRef();
-  let image = useRef();
   let para = useRef();
 
   useGSAP(() => {
-    const elements = [head.current, h2.current, image.current, para.current];
+    const elements = [head.current, h2.current, para.current];
     tl.from(
       elements,
       {

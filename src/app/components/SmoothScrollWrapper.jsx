@@ -31,6 +31,8 @@ const SmoothScrollWrapper = ({ children }) => {
       },
     });
 
+    window.locoScroll = locoScroll;
+
     locoScroll.on("scroll", ScrollTrigger.update);
 
     ScrollTrigger.scrollerProxy(scrollEl, {
