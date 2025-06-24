@@ -165,7 +165,7 @@ const Navbar = ({ tl }) => {
           ref={menuRef}
           className="floater fixed top-[4.5rem] left-0 w-full bg-[#0e0e0e] flex flex-col items-center py-4 gap-4 text-white font-semibold z-40"
         >
-          <ul className="flex flex-col items-center decoration-0 gap-3 justify-center text-[#8b8b8b] text-[1rem] font-semibold font-sans">
+          <ul className="flex flex-col items-center decoration-0 gap-3 justify-center text-[#8b8b8b] text-[1rem] font-semibold font-sans bar">
             <li>
               <button
                 onClick={() => {
@@ -202,7 +202,7 @@ const Navbar = ({ tl }) => {
           </ul>
 
           <Button
-            className="font-sans bg-white text-black border cursor-pointer py-2 px-6 rounded-sm mt-2 active:scale-95"
+            className="font-sans bg-white text-black border cursor-pointer py-2 px-6 rounded-sm mt-2 active:scale-95 floatBtn"
             onClick={() => setIsOpen(false)}
           >
             Get Started

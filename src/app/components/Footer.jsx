@@ -25,11 +25,11 @@ const Footer = () => {
       data-scroll-section
       className="w-full h-[75vh] bg-[#0C0C0C] select-none"
     >
-      {/* <hr
+      <hr
         data-scroll
         data-scroll-speed="6.5"
-        className="h-[0.01rem] bg-gray-400 border-0"
-      /> */}
+        className="h-[0.01rem] bg-gray-400 border-0 flow-line hidden"
+      />
       <div className="links w-full h-[80%] pt-[1rem] flex items-center">
         <div
           data-scroll
@@ -40,7 +40,7 @@ const Footer = () => {
           <img
             src="/logo_audioshots.webp"
             alt=""
-            className="w-[8rem] h-[8-rem]"
+            className="w-[8rem] h-[8-rem] logoAS"
           />
           <small className="text-sm text-white leading-none font-medium">
             Connect with our Socials
@@ -123,7 +123,7 @@ const Footer = () => {
         </div>
       </div>
       <hr className="h-[0.1rem] bg-gray-800 w-[96%] ml-[2%] bottom-line" />
-      <div className="text-sm font-semibold text-white text-center pt-[2rem]">
+      <div className="text-sm font-semibold text-white text-center pt-[2rem] copyright">
         Copyright &copy; 2025 Weoto Technologies Private Limited.
         <span className="block">All rights reserved.</span>
       </div>

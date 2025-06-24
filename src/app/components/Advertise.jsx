@@ -67,7 +67,7 @@ const Advertise = () => {
             alt="screen 1"
             width={300}
             height={500}
-            className=""
+            className="scr1"
           />
         </div>
         <div className="rightScr flex flex-col gap-6">
@@ -83,7 +83,7 @@ const Advertise = () => {
             alt="screen 2"
             width={300}
             height={500}
-            className=""
+            className="scr2"
           />
         </div>
       </div>

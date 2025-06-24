@@ -21,7 +21,7 @@ const Contact = () => {
         <Card
           data-scroll
           data-scroll-speed="5"
-          className="w-full max-w-md bg-[#0f0f0f] text-white shadow-lg rounded-xl border-0 mt-[-3rem] pb-[0.5rem]"
+          className="w-full max-w-md bg-[#0f0f0f] text-white shadow-lg rounded-xl border-0 mt-[-3rem] pb-[0.5rem] form"
         >
           <CardContent className="p-6">
             <form className="space-y-4">

@@ -178,10 +178,14 @@ html.has-scroll-smooth .c-scrollbar {
     font-size: 0.65rem;
     margin-top: 1rem;
   }
+  #about {
+    padding-top: 6rem;
+  }
   #about p {
     width: 95%;
   }
   #about .cards {
+    margin-top: -3rem;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -218,6 +222,107 @@ html.has-scroll-smooth .c-scrollbar {
     width: 95%;
     margin-bottom: 2rem;
   }
+  #contact .form {
+    margin-top: -6rem;
+  }
+  .links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .links .right {
+    display: none;
+  }
+  .links .left {
+    margin-left: -3rem;
+    margin-top: -1rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .bottom-line {
+    width: 100%;
+    margin-left: 0;
+  }
+  .copyright {
+    padding: 1.5rem 2rem;
+  }
+}
+
+@media (min-width: 376px) and (max-width: 391px) {
+  .navbar {
+    padding: 1rem;
+    gap: 2rem;
+    justify-content: space-between;
+  }
+  .navbar .btn,
+  .navbar ul {
+    display: none;
+  }
+  .navbar .menu {
+    display: block;
+  }
+  #home h1 {
+    margin-top: -1rem;
+    font-size: 3rem;
+  }
+  #home h2 {
+    font-size: 1.2rem;
+  }
+  #home p {
+    font-size: 0.65rem;
+    margin-top: 1rem;
+  }
+  #about {
+    padding-top: 6rem;
+  }
+  #about p {
+    width: 95%;
+  }
+  #about .cards {
+    margin-top: -3rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+  }
+  #googleplay h2,
+  #googleplay p,
+  #googleplay .blank {
+    display: none;
+  }
+  #googleplay {
+    padding: 0.5rem 6.6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  #googleplay .btn {
+    position: absolute;
+    top: 0;
+    left: 20%;
+    z-index: 999;
+  }
+  #googleplay .right {
+    width: 200%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+  #contact {
+    padding-top: 1rem;
+  }
+  #contact p {
+    width: 95%;
+    margin-bottom: 2rem;
+  }
   .links {
     display: flex;
     flex-direction: column;
@@ -242,7 +347,7 @@ html.has-scroll-smooth .c-scrollbar {
   }
 }
 
-@media (min-width: 376px) and (max-width: 440px) {
+@media (min-width: 391px) and (max-width: 440px) {
   .navbar {
     padding: 1rem;
     gap: 2rem;
@@ -266,10 +371,14 @@ html.has-scroll-smooth .c-scrollbar {
     font-size: 0.85rem;
     margin-top: 1.5rem;
   }
+  #about {
+    padding-top: 6rem;
+  }
   #about p {
     width: 95%;
   }
   #about .cards {
+    margin-top: -0.5rem;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -302,9 +411,15 @@ html.has-scroll-smooth .c-scrollbar {
     justify-content: center;
     gap: 2rem;
   }
+  #contact {
+    padding-top: 1rem;
+  }
   #contact p {
     width: 95%;
     margin-bottom: 2rem;
+  }
+  #contact .form {
+    margin-top: -3rem;
   }
   .links {
     display: flex;
@@ -330,7 +445,7 @@ html.has-scroll-smooth .c-scrollbar {
   }
 }
 
-@media (min-width: 440px) and (max-width: 900px) {
+@media (min-width: 440px) and (max-width: 900px) and (max-height: 933px) {
   .navbar {
     padding: 1rem 2rem;
     gap: 2rem;
@@ -349,10 +464,14 @@ html.has-scroll-smooth .c-scrollbar {
   #home h2 {
     font-size: 2rem;
   }
+  #about {
+    padding-top: 6rem;
+  }
   #about p {
     width: 95%;
   }
   #about .cards {
+    margin-top: -3rem;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -403,6 +522,9 @@ html.has-scroll-smooth .c-scrollbar {
     width: 95%;
     margin-bottom: 2rem;
   }
+  #contact .form {
+    margin-top: -7rem;
+  }
   .links {
     display: flex;
     flex-direction: column;
@@ -427,4 +549,270 @@ html.has-scroll-smooth .c-scrollbar {
   }
 }
 
+@media (min-width: 440px) and (max-width: 916px) and (min-height: 933px) and (max-height: 1400px) {
+  .navbar {
+    padding: 1rem 2rem;
+    gap: 2rem;
+    justify-content: space-between;
+  }
+  .navbar .btn,
+  .navbar ul {
+    display: none;
+  }
+  .navbar .menu {
+    display: block;
+  }
+  #home h1 {
+    font-size: 6rem;
+  }
+  #home h2 {
+    font-size: 2rem;
+  }
+  #about {
+    padding-top: 8rem;
+  }
+  #about p {
+    width: 95%;
+  }
+  #about .cards {
+    margin-top: 3rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+  }
+  #googleplay .blank {
+    display: none;
+  }
+  #googleplay h2,
+  #googleplay p,
+  #googleplay .blank {
+    display: none;
+  }
+  #googleplay {
+    padding: 0.5rem 6.6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  #googleplay .btn {
+    position: absolute;
+    top: 0;
+    left: 36%;
+    z-index: 999;
+  }
+  #googleplay {
+    padding: 0.5rem 6.6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  #googleplay .right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 1rem;
+  }
+  #googleplay .blank {
+    display: none;
+  }
+  #contact {
+    padding-top: 2rem;
+  }
+  #contact p {
+    width: 95%;
+    margin-bottom: 2rem;
+  }
+  #contact .form {
+    margin-top: 1rem;
+  }
+  .links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .bottom-line {
+    width: 100%;
+    margin-left: 0;
+  }
+  .links .right {
+    display: none;
+  }
+  .links .left {
+    margin-left: -3rem;
+    margin-top: -1rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .links .logoAS {
+    width: 12rem;
+    height: 12rem;
+  }
+  .links small {
+    font-size: 2rem;
+  }
+  .flow-line {
+    display: block;
+  }
+  .copyright {
+    font-size: 1.3rem;
+  }
+}
 
+@media (max-width: 1026px) and (min-height: 1300px) and (max-height: 1400px) {
+  .navbar {
+    padding: 2rem 3rem;
+    gap: 2rem;
+    justify-content: space-between;
+  }
+  .navbar .btn,
+  .navbar ul {
+    display: none;
+  }
+  .navbar .menu {
+    display: block;
+  }
+  .floater {
+    padding-top: 3rem;
+  }
+  .floater .bar {
+    font-size: 1.2rem;
+    gap: 1rem;
+  }
+  #home h1 {
+    font-size: 8.5rem;
+  }
+  #home h2 {
+    font-size: 2.6rem;
+  }
+  #about {
+    padding-top: 8rem;
+  }
+  #about p {
+    width: 95%;
+  }
+  #about .cards {
+    margin-top: 3rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+  }
+  #googleplay .blank {
+    display: none;
+  }
+  #googleplay h2,
+  #googleplay p,
+  #googleplay .blank {
+    display: none;
+  }
+  #googleplay {
+    padding: 0.5rem 6.6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 50vh;
+  }
+  #googleplay .btn {
+    margin-top: 2rem;
+    position: absolute;
+    top: 0;
+    left: 36%;
+    z-index: 999;
+    font-size: 1rem;
+    padding: 1.8rem;
+  }
+  #googleplay {
+    padding: 0.5rem 6.6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  #googleplay .right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6rem;
+    margin-bottom: 1rem;
+  }
+  #googleplay .leftScr {
+    width: 60%;
+  }
+
+  #googleplay .rightScr {
+    margin-top: 16rem;
+    width: 90%;
+  }
+
+  #googleplay .blank {
+    display: none;
+  }
+  #contact {
+    padding-top: 2rem;
+  }
+  #contact h1{
+    font-size: 3rem;
+  }
+  #contact p {
+    padding-top: 1rem;
+    font-size: 1.2rem;
+    width: 95%;
+    margin-bottom: 2rem;
+  }
+  #contact .form {
+    margin-top: 5rem; 
+  }
+  #contact form {
+    padding: 1rem;
+  }
+  .links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .bottom-line {
+    width: 100%;
+    margin-left: 0;
+  }
+  .links .right {
+    display: none;
+  }
+  .links .left {
+    margin-left: -3rem;
+    margin-top: -1rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .links .logoAS {
+    width: 12rem;
+    height: 12rem;
+    margin-bottom: 2rem;
+  }
+  .links small {
+    font-size: 2rem;
+  }
+  .flow-line {
+    display: block;
+  }
+  .copyright {
+    font-size: 1.6rem;
+  }
+}
