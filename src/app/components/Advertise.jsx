@@ -1,6 +1,7 @@
 import { Button } from "@/app/components/ui/button";
 import Image from "next/image";
 import React, { useRef } from "react";
+import Carousel from "./Carousel";
 
 const Advertise = () => {
   const playStr = useRef();
@@ -37,18 +38,8 @@ const Advertise = () => {
             <h4 className="scroll-m-20 text-md">Download on Play Store</h4>
           </Button>
         </a>
-
-        {/* <Link href="">
-          <Button
-            ref={playStr}
-            variant="outline"
-            className="bg-[#131313] text-white py-[1.5rem] px-[1rem] cursor-pointer rounded-sm border-0 flex gap-3 items-center hover:bg-[#1e1230] hover:text-white"
-          >
-            <Image src="/appStore.svg" width={30} height={30} />
-            <h4 className="scroll-m-20 text-md">Download on App Store</h4>
-          </Button>
-        </Link> */}
       </div>
+      <Carousel />
       <div
         data-scroll
         data-scroll-speed="8"

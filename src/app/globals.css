@@ -846,3 +846,12 @@ html.has-scroll-smooth .c-scrollbar {
     font-size: 1.6rem;
   }
 }
+
+@media (min-width: 1026px) {
+  #googleplay .right {
+    display: none;
+  }
+  .carousel {
+    display: block;
+  }
+}
