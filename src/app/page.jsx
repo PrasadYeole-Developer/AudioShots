@@ -10,10 +10,7 @@ const SmoothScrollWrapper = dynamic(
   () => import("./components/SmoothScrollWrapper"),
   { ssr: false }
 );
-const Footer = dynamic(() => import("./components/Footer"), {
-  ssr: false,
-});
-
+const Footer = dynamic(() => import("./components/Footer"), { ssr: false });
 const About = dynamic(() => import("./components/About"));
 const Advertise = dynamic(() => import("./components/Advertise"));
 const Contact = dynamic(() => import("./components/Contact"));

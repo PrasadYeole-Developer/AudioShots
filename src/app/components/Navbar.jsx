@@ -206,7 +206,6 @@ const Navbar = ({ tl }) => {
 
           <Button
             className="font-sans bg-white text-black border cursor-pointer py-2 px-6 rounded-sm mt-2 active:scale-95 floatBtn"
-            onClick={() => setIsOpen(false)}
           >
             Get Started
           </Button>

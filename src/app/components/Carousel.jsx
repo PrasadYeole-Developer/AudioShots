@@ -11,6 +11,7 @@ const images = [
   "/carousel/img4.jpg",
   "/carousel/img5.jpg",
 ];
+
 const Carousel = () => {
   const [activeIndex, setActiveIndex] = useState(2);
 
@@ -30,22 +31,24 @@ const Carousel = () => {
     const interval = setInterval(() => {
       setActiveIndex((prevIndex) => (prevIndex + 1) % images.length);
     }, 2000);
-
     return () => clearInterval(interval);
   }, []);
 
   return (
-    <div className="hidden carousel">
+    <div className="carousel hidden">
       <div className="w-full h-screen flex items-center justify-center bg-black overflow-hidden">
-        <div className="flex gap-4 transition-all duration-500 ease-in-out">
+        <div className="relative w-[50rem] h-[26rem]">
           {getVisibleImages().map(({ index, position }) => (
             <div
               key={index}
               onClick={() => setActiveIndex(index)}
               className={clsx(
-                "transition-all duration-500 ease-in-out cursor-pointer",
-                position === 0 ? "scale-110 z-10" : "scale-75 opacity-60 z-0"
+                "absolute top-0 left-1/2 transition-all duration-500 ease-in-out cursor-pointer",
+                position === 0 ? "z-10 scale-110" : "z-0 scale-75 opacity-60"
               )}
+              style={{
+                transform: `translateX(${position * 280}px)`,
+              }}
             >
               <Image
                 src={images[index]}
