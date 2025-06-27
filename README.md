@@ -1,4 +1,4 @@
-# 🔊 AudioShots
+# 🔊 AudioShots 
 
 A modern audio content platform built with **Next.js (App Router)**, **Tailwind CSS**, **GSAP**, and **Locomotive Scroll**. AudioShots lets creators upload, edit, and share short-form audio content with dynamic scroll animations and a smooth user experience.
 
