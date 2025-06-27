@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import clsx from "clsx";
 import Image from "next/image";
 
@@ -14,6 +14,7 @@ const images = [
 
 const Carousel = () => {
   const [activeIndex, setActiveIndex] = useState(2);
+  const intervalRef = useRef(null);
 
   const getVisibleImages = () => {
     const total = images.length;
@@ -28,26 +29,42 @@ const Carousel = () => {
   };
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setActiveIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 2000);
-    return () => clearInterval(interval);
+    const startInterval = () => {
+      intervalRef.current = setInterval(() => {
+        setActiveIndex((prevIndex) => (prevIndex + 1) % images.length);
+      }, 5000);
+    };
+
+    startInterval();
+
+    return () => clearInterval(intervalRef.current);
   }, []);
+
+  const handleClick = (index) => {
+    setActiveIndex(index);
+    clearInterval(intervalRef.current);
+    intervalRef.current = setInterval(() => {
+      setActiveIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 5000);
+  };
 
   return (
     <div className="carousel hidden">
-      <div className="w-full h-screen flex items-center justify-center bg-black overflow-hidden">
+      <div className="w-full h-screen flex items-center justify-center bg-black overflow-visible">
         <div className="relative w-[50rem] h-[26rem]">
           {getVisibleImages().map(({ index, position }) => (
             <div
               key={index}
-              onClick={() => setActiveIndex(index)}
+              onClick={() => handleClick(index)}
               className={clsx(
-                "absolute top-0 left-1/2 transition-all duration-500 ease-in-out cursor-pointer",
-                position === 0 ? "z-10 scale-110" : "z-0 scale-75 opacity-60"
+                "absolute top-0 left-1/2 transition-transform transition-opacity transition-scale duration-700 ease-[cubic-bezier(0.65,0,0.35,1)] cursor-pointer",
+                position === 0
+                  ? "z-10 scale-110"
+                  : "z-0 scale-75 opacity-70 blur-[1.2px] brightness-75 contrast-90"
               )}
               style={{
-                transform: `translateX(${position * 280}px)`,
+                transform: `translateX(${position * 300}px)`,
+                willChange: "transform",
               }}
             >
               <Image
