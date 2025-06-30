@@ -57,10 +57,10 @@ const Carousel = () => {
               key={index}
               onClick={() => handleClick(index)}
               className={clsx(
-                "absolute top-0 left-1/2 transition-transform transition-opacity transition-scale duration-700 ease-[cubic-bezier(0.65,0,0.35,1)] cursor-pointer",
+                "absolute top-0 left-1/2 transition-transform transition-scale duration-200 ease-[cubic-bezier(0.65,0,0.35,1)] cursor-pointer",
                 position === 0
                   ? "z-10 scale-110"
-                  : "z-0 scale-75 opacity-70 blur-[1.2px] brightness-75 contrast-90"
+                  : "z-0 scale-75 opacity-70 blur-[1px] brightness-75 contrast-90"
               )}
               style={{
                 transform: `translateX(${position * 300}px)`,

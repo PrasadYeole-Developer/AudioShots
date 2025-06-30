@@ -854,4 +854,13 @@ html.has-scroll-smooth .c-scrollbar {
   .carousel {
     display: block;
   }
+  .footer {
+    height: 15vh;
+  }
+  .footer .links {
+    display: none;
+  }
+  .contact-links {
+    display: block;
+  }
 }

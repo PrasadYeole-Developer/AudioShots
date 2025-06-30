@@ -6,24 +6,24 @@ import Image from "next/image";
 import React from "react";
 
 const Footer = () => {
-  const marqueeRef = useRef(null);
+  // const marqueeRef = useRef(null);
 
-  useGSAP(() => {
-    const container = marqueeRef.current;
-    const totalWidth = container.scrollWidth;
+  // useGSAP(() => {
+  //   const container = marqueeRef.current;
+  //   const totalWidth = container.scrollWidth;
 
-    gsap.to(container, {
-      x: `-${totalWidth * 3}`,
-      duration: 40,
-      ease: "none",
-      repeat: -1,
-    });
-  }, []);
+  //   gsap.to(container, {
+  //     x: `-${totalWidth * 3}`,
+  //     duration: 40,
+  //     ease: "none",
+  //     repeat: -1,
+  //   });
+  // }, []);
 
   return (
     <div
       data-scroll-section
-      className="w-full h-[75vh] bg-[#0C0C0C] select-none"
+      className="w-full h-[75vh] bg-[#0C0C0C] select-none footer"
     >
       <hr
         data-scroll
@@ -81,7 +81,7 @@ const Footer = () => {
             </a>
           </div>
         </div>
-        <div className="right flex items-center w-[70%] p-2 overflow-hidden mt-[-1.5rem] ml-[-1rem]">
+        {/* <div className="right flex items-center w-[70%] p-2 overflow-hidden mt-[-1.5rem] ml-[-1rem]">
           <div ref={marqueeRef} className="flex gap-[5rem] w-fit">
             {[1, 2, 3, 4, 5, 6].map((n) => (
               <Image
@@ -120,7 +120,7 @@ const Footer = () => {
               />
             ))}
           </div>
-        </div>
+        </div> */}
       </div>
       <hr className="h-[0.1rem] bg-gray-800 w-[96%] ml-[2%] bottom-line" />
       <div className="text-sm font-semibold text-white text-center pt-[2rem] copyright">
