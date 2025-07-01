@@ -1,8 +1,8 @@
 "use client";
-import { useRef } from "react";
-import { useGSAP } from "@gsap/react";
-import gsap from "gsap";
-import Image from "next/image";
+// import { useRef } from "react";
+// import { useGSAP } from "@gsap/react";
+// import gsap from "gsap";
+// import Image from "next/image";
 import React from "react";
 
 const Footer = () => {

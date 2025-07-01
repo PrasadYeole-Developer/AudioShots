@@ -863,4 +863,12 @@ html.has-scroll-smooth .c-scrollbar {
   .contact-links {
     display: block;
   }
+  .contact {
+    position: relative;
+  }
+  .wrapper-contacts .form {
+    position: absolute;
+    right: 18%;
+    top: 26%;
+  }
 }
