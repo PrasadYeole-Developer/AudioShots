@@ -867,6 +867,7 @@ html.has-scroll-smooth .c-scrollbar {
     position: relative;
   }
   .wrapper-contacts .form {
+    z-index: 999;
     position: absolute;
     right: 18%;
     top: 26%;

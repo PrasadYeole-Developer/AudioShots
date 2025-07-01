@@ -5,9 +5,21 @@ import { Button } from "@/app/components/ui/button";
 import { Card, CardContent, CardFooter } from "@/app/components/ui/card";
 import { Input } from "@/app/components/ui/input";
 import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
 
 const Contact = () => {
-  
+  const logoRef = useRef();
+  useGSAP(() => {
+    gsap.to(logoRef.current, {
+      boxShadow: "0 0 0.6rem 0.3rem rgba(255, 255, 255, 0.4)",
+      repeat: -1,
+      yoyo: true,
+      duration: 0.6,
+      scale: 1.03,
+      transformOrigin: "center center",
+      ease: "power1.inOut",
+    });
+  }, []);
 
   return (
     <div
@@ -114,6 +126,7 @@ const Contact = () => {
         >
           <div className="left px-[3rem] py-[2rem] flex flex-col gap-[1.2rem] w-[28%] h-full mb-[1rem] items-center justify-center mt-[-0.5rem] ml-72">
             <img
+              ref={logoRef}
               src="/logo_audioshots.webp"
               alt=""
               className="w-[12rem] h-[12rem] logoAS rounded-2xl mb-2"
