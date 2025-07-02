@@ -252,7 +252,7 @@ html.has-scroll-smooth .c-scrollbar {
   }
 }
 
-@media (min-width: 376px) and (max-width: 391px) {
+@media (min-width: 375px) and (max-width: 391px) {
   html,
   body,
   [data-scroll-container] {
@@ -328,6 +328,9 @@ html.has-scroll-smooth .c-scrollbar {
   #contact p {
     width: 95%;
     margin-bottom: 2rem;
+  }
+   #contact .form {
+    margin-top: -3rem;
   }
   .links {
     display: flex;
@@ -863,13 +866,17 @@ html.has-scroll-smooth .c-scrollbar {
   .contact-links {
     display: block;
   }
-  .contact {
+  #contact {
     position: relative;
   }
   .wrapper-contacts .form {
     z-index: 999;
     position: absolute;
-    right: 18%;
+    right: 26%;
     top: 26%;
+  }
+  #contact .logoAS {
+    box-shadow: 0.2rem 0.2rem #0e0e0e;
+    backdrop-filter: 1rem;
   }
 }

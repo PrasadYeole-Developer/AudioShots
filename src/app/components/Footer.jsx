@@ -11,7 +11,6 @@ const Footer = () => {
   // useGSAP(() => {
   //   const container = marqueeRef.current;
   //   const totalWidth = container.scrollWidth;
-
   //   gsap.to(container, {
   //     x: `-${totalWidth * 3}`,
   //     duration: 40,

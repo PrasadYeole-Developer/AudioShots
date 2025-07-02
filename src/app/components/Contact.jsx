@@ -1,26 +1,11 @@
 "use client";
 
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import { Button } from "@/app/components/ui/button";
 import { Card, CardContent, CardFooter } from "@/app/components/ui/card";
 import { Input } from "@/app/components/ui/input";
-import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
 
 const Contact = () => {
-  const logoRef = useRef();
-  useGSAP(() => {
-    gsap.to(logoRef.current, {
-      boxShadow: "0 0 0.6rem 0.3rem rgba(255, 255, 255, 0.4)",
-      repeat: -1,
-      yoyo: true,
-      duration: 0.6,
-      scale: 1.03,
-      transformOrigin: "center center",
-      ease: "power1.inOut",
-    });
-  }, []);
-
   return (
     <div
       id="contact"
@@ -39,11 +24,11 @@ const Contact = () => {
       <div className="w-full flex gap-50 items-center justify-center wrapper-contacts">
         <Card
           data-scroll
-          data-scroll-speed="5"
-          className="w-full max-w-md bg-[#0f0f0f] text-white shadow-lg rounded-xl border-0 mt-[-2rem] pb-[0.5rem] form"
+          data-scroll-speed="1"
+          className="w-full max-w-sm bg-[#0f0f0f] text-white shadow-lg rounded-xl border-0 pb-[0.5rem] form"
         >
           <CardContent className="p-6">
-            <form className="space-y-4">
+            <form className="space-y-4 my-[-1.7rem]">
               <div className="flex flex-col gap-1">
                 <label
                   htmlFor="firstName"
@@ -113,9 +98,9 @@ const Contact = () => {
           <CardFooter className="px-6 pb-6 flex flex-col items-center">
             <Button
               variant="outline"
-              className="bg-[#161616] text-white py-[1.5rem] px-[1rem] cursor-pointer rounded-sm border-0 flex gap-3 items-center hover:bg-[#1e1230] hover:text-white"
+              className="bg-[#161616] text-white py-[1.5rem] px-[1rem] cursor-pointer rounded-sm border-0 flex gap-3 items-center mb-[-0.7rem] hover:bg-[#1e1230] hover:text-white"
             >
-              <h4 className="scroll-m-20 text-md px-[11rem]">Send</h4>
+              <h4 className="scroll-m-20 text-md px-[8.5rem]">Send</h4>
             </Button>
           </CardFooter>
         </Card>
@@ -126,7 +111,6 @@ const Contact = () => {
         >
           <div className="left px-[3rem] py-[2rem] flex flex-col gap-[1.2rem] w-[28%] h-full mb-[1rem] items-center justify-center mt-[-0.5rem] ml-72">
             <img
-              ref={logoRef}
               src="/logo_audioshots.webp"
               alt=""
               className="w-[12rem] h-[12rem] logoAS rounded-2xl mb-2"
